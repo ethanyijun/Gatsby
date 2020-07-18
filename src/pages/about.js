@@ -4,8 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RobotImage from "../components/robotimage"
 import style from "./events.module.css"
+import Img from "gatsby-image"
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   return (
     <Layout>
       <SEO
@@ -17,6 +18,7 @@ const AboutPage = () => {
         // article
       />
       <section className={style.wrapper}>
+        <Img fluid={data.headerImage.childImageSharp.fluid} alt="robot" />
         <h1 className={style.heading}>About this site</h1>
         <RobotImage
           src={"/images/bubbles-callout.png"}
@@ -40,3 +42,15 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+export const query = graphql`
+  {
+    headerImage: file(relativePath: { eq: "audi.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1184) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

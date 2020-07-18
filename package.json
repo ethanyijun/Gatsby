@@ -8,25 +8,20 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.45",
+    "gatsby-image": "^2.4.13",
     "gatsby-plugin-css-customs": "^0.4.0",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-postcss": "^2.2.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
-<<<<<<< HEAD
-    "gatsby-plugin-styled-components": "^3.3.10",
-=======
+    "gatsby-plugin-sharp": "^2.6.19",
     "gatsby-plugin-styled-components": "^3.2.3",
->>>>>>> d0fd406d9fcca46393abd0a8e7e1d91b630a4715
-    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-source-filesystem": "^2.3.20",
+    "gatsby-transformer-sharp": "^2.5.11",
     "prop-types": "^15.7.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-<<<<<<< HEAD
-    "styled-components": "^5.1.1"
-=======
     "styled-components": "^5.1.0"
->>>>>>> d0fd406d9fcca46393abd0a8e7e1d91b630a4715
   },
   "devDependencies": {
     "prettier": "2.0.4"

@@ -13,6 +13,7 @@ const MainNav = () => {
         <li>
           <Link to="/events">Events</Link>
         </li>
+
         <li>
           <Link to="/about">About</Link>
         </li>
