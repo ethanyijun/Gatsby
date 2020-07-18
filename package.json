@@ -13,12 +13,20 @@
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-postcss": "^2.2.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
+<<<<<<< HEAD
     "gatsby-plugin-styled-components": "^3.3.10",
+=======
+    "gatsby-plugin-styled-components": "^3.2.3",
+>>>>>>> d0fd406d9fcca46393abd0a8e7e1d91b630a4715
     "gatsby-source-filesystem": "^2.2.2",
     "prop-types": "^15.7.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+<<<<<<< HEAD
     "styled-components": "^5.1.1"
+=======
+    "styled-components": "^5.1.0"
+>>>>>>> d0fd406d9fcca46393abd0a8e7e1d91b630a4715
   },
   "devDependencies": {
     "prettier": "2.0.4"

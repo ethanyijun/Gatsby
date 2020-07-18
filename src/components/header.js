@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import Navigation from "./navigation"
 
+import MainNav from "./mainnav"
 import style from "./header.module.css"
 
 const Header = ({ siteTitle, siteDescription }) => (
@@ -20,7 +21,11 @@ const Header = ({ siteTitle, siteDescription }) => (
         <div className={style.site_description}>{siteDescription}</div>
       </Link>
     </div>
+<<<<<<< HEAD
     <Navigation />
+=======
+    <MainNav />
+>>>>>>> d0fd406d9fcca46393abd0a8e7e1d91b630a4715
   </header>
 )
 
