@@ -32,7 +32,7 @@ export const query = graphql`
   {
     bodyImage: file(relativePath: { eq: "audi.png" }) {
       childImageSharp {
-        fixed(width: 288) {
+        fixed(width: 288, grayscale: true) {
           ...GatsbyImageSharpFixed
         }
       }
