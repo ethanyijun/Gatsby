@@ -18,6 +18,7 @@ module.exports = {
     twitter: `mor10`,
     menuLinks: [
       {
+<<<<<<< HEAD
         name: "Home",
         link: "/",
       },
@@ -28,6 +29,18 @@ module.exports = {
       {
         name: "Events",
         link: "/events",
+=======
+        name: `Home`,
+        link: `/`,
+      },
+      {
+        name: `About`,
+        link: `/about`,
+      },
+      {
+        name: `Events`,
+        link: `/events`,
+>>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
       },
     ],
   },
@@ -41,8 +54,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+<<<<<<< HEAD
         name: `pages`,
         path: `${__dirname}/content/images`,
+=======
+        name: `images`,
+        path: `${__dirname}/content/images/`,
+>>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
       },
     },
   ],

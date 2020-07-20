@@ -11,6 +11,7 @@ const MainNav = ({ menuLinks }) => {
             <Link to={props.link}>{props.name}</Link>
           </li>
         ))}
+<<<<<<< HEAD
 
         {/* <li>
           <Link to={data.site.siteMetadata.eventLink}>Events</Link>
@@ -18,6 +19,8 @@ const MainNav = ({ menuLinks }) => {
         <li>
           <Link to={data.site.siteMetadata.aboutLink}>About</Link>
         </li> */}
+=======
+>>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
       </ul>
     </nav>
   )
