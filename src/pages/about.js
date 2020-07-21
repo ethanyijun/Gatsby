@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RobotImage from "../components/robotimage"
 import style from "./events.module.css"
-import Img from "gatsby-image"
 
 const AboutPage = ({ data }) => {
   return (
@@ -20,11 +19,7 @@ const AboutPage = ({ data }) => {
         // article
       />
       <section className={style.wrapper}>
-<<<<<<< HEAD
-        <Img fluid={data.headerImage.childImageSharp.fluid} alt="robot" />
-=======
         <Img fluid={data.headerImage.childImageSharp.fluid} alt="Robots" />
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
         <h1 className={style.heading}>About this site</h1>
         <RobotImage
           src={"/images/bubbles-callout.png"}
@@ -51,13 +46,9 @@ export default AboutPage
 
 export const query = graphql`
   {
-<<<<<<< HEAD
-    headerImage: file(relativePath: { eq: "audi.png" }) {
-=======
     headerImage: file(
       relativePath: { eq: "robots-androids-and-cyborgs-oh-my-1184x360.jpg" }
     ) {
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
       childImageSharp {
         fluid(maxWidth: 1184) {
           ...GatsbyImageSharpFluid

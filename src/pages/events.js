@@ -1,11 +1,6 @@
 import React from "react"
-<<<<<<< HEAD
-import Img from "gatsby-image"
-=======
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Event from "../components/event"
@@ -56,15 +51,6 @@ export default IndexPage
 
 export const query = graphql`
   {
-<<<<<<< HEAD
-    bodyImage: file(relativePath: { eq: "audi.png" }) {
-      childImageSharp {
-        fixed(width: 288, grayscale: true) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-=======
     headerImage: file(
       relativePath: { eq: "getting-creative-with-3-d-printers-1184x360.jpg" }
     ) {
@@ -100,6 +86,5 @@ export const query = graphql`
         url
       }
     }
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
   }
 `

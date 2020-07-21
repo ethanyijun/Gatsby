@@ -18,18 +18,6 @@ module.exports = {
     twitter: `mor10`,
     menuLinks: [
       {
-<<<<<<< HEAD
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "About",
-        link: "/about",
-      },
-      {
-        name: "Events",
-        link: "/events",
-=======
         name: `Home`,
         link: `/`,
       },
@@ -40,7 +28,6 @@ module.exports = {
       {
         name: `Events`,
         link: `/events`,
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
       },
     ],
   },
@@ -54,13 +41,45 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-<<<<<<< HEAD
-        name: `pages`,
-        path: `${__dirname}/content/images`,
-=======
         name: `images`,
         path: `${__dirname}/content/images/`,
->>>>>>> 55d452322e710a607a716d97d9fd6880134fba01
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/content/events/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        typeName: `Event`, // a fixed string
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/content/articles/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1080,
+              quality: 100,
+            },
+          },
+        ],
       },
     },
   ],
